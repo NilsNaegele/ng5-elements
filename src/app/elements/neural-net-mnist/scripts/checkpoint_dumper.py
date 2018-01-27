@@ -1,4 +1,4 @@
-# Copyright 2017 Google Inc. All Rights Reserved.
+# Copyright 2018 Google Inc. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -47,7 +47,7 @@ class CheckpointDumper(object):
   remove_variables_regex_re : sre.SRE_Pattern
       Compiled `remove variable` regex
   """
-  
+
   FILENAME_CHARS = string.ascii_letters + string.digits + '_'
 
   def __init__(self, checkpoint_file, output_dir, remove_variables_regex):
@@ -75,7 +75,7 @@ class CheckpointDumper(object):
   @staticmethod
   def make_dir(directory):
     """Makes directory if not existing.
-    
+
     Parameters
     ----------
     directory : str
